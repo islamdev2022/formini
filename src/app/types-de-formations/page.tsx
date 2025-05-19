@@ -7,21 +7,30 @@ import { motion } from "framer-motion"
 const formations = [
   {
     title: "Accueil et service client",
-    description: "Améliorer la communication, la politesse, la gestion des conflits…",
+    description: "Pour offrir une expérience client exceptionnelle",
+    content1: "Améliorer la communication",
+    content2: "Gestion des conflits",
+    content3: "Politesse",
     icon: BookOpen,
     color: "from-red-600 to-pink-500",
     delay: 0,
   },
   {
     title: "Hygiène et sécurité",
-    description: "Normes HACCP, nettoyage, manipulation des aliments…",
+    description: "Pour garantir la sécurité alimentaire et la propreté des locaux",
+    content1: "Normes HACCP",
+    content2: "nettoyage",
+    content3: "manipulation des aliments",
     icon: Shield,
     color: "from-red-600 to-orange-500",
     delay: 0.1,
   },
   {
     title: "Formation technique",
-    description: "Cuisine, entretien, maintenance, etc.",
+    description: "Pour maîtriser les outils et techniques de l'industrie",
+    content1: "Techniques de cuisine",
+    content2: "Entretien des locaux",
+    content3: "Maintenance des équipements",
     icon: Tool,
     color: "from-red-500 to-red-600",
     delay: 0.2,
@@ -29,6 +38,9 @@ const formations = [
   {
     title: "Langues étrangères / informatique",
     description: "Pour s'adapter à la clientèle internationale et aux outils modernes",
+    content1: "Anglais",
+    content2: "Espagnol",
+    content3: "Francais",
     icon: Globe,
     color: "from-pink-500 to-red-500",
     delay: 0.3,
@@ -72,21 +84,21 @@ export default function TypesDeFormations() {
                       <div className="h-10 w-10 rounded-full flex items-center justify-center bg-red-100 mr-4">
                         <span className="font-bold text-red-600">01</span>
                       </div>
-                      <span className="text-gray-700">Bases fondamentales</span>
+                      <span className="text-gray-700">{formation.content1}</span>
                     </div>
 
                     <div className="flex items-center">
                       <div className="h-10 w-10 rounded-full flex items-center justify-center bg-red-100 mr-4">
                         <span className="font-bold text-red-600">02</span>
                       </div>
-                      <span className="text-gray-700">Perfectionnement</span>
+                      <span className="text-gray-700">{formation.content2}</span>
                     </div>
 
                     <div className="flex items-center">
                       <div className="h-10 w-10 rounded-full flex items-center justify-center bg-red-100 mr-4">
                         <span className="font-bold text-red-600">03</span>
                       </div>
-                      <span className="text-gray-700">Expertise avancée</span>
+                      <span className="text-gray-700">{formation.content3}</span>
                     </div>
                   </div>
                 </CardContent>

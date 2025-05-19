@@ -69,7 +69,7 @@ export default function QuizEtJeux() {
           >
             <Card
               className={cn(
-                "overflow-hidden rounded-2xl shadow-md transition-all duration-300",
+                "overflow-hidden rounded-2xl shadow-md transition-all duration-300 py-0",
                 activeBlock === block.id ? "shadow-lg border-red-300" : "hover:shadow-lg cursor-pointer",
               )}
               onClick={() => toggleBlock(block.id)}
